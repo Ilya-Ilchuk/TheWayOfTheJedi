@@ -2,18 +2,13 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Dragon Ravi");
+        System.out.println("Dragon Ravi\n");
 
-        Cube cube = new Cube();
+        Cube cube = new Cube("pink");
 
-//        cube.color = "red";
-//        cube.width = 2;
-//        cube.height = 2;
-//        cube.coordinates = new byte[] {50,50,0};
-        System.out.println(cube.color);
+        Cube cube1 = new Cube("green", 2,2);
 
-        cube.setValues("black", 2.0f, 2.0f, new byte[] {50,50,0});
+        Cube cube2 = new Cube();
 
-        System.out.println(cube.getValues());
     }
 }
