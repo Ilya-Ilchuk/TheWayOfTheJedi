@@ -6,6 +6,6 @@ public class Rectangle extends Figure{
 
     @Override
     public void rotate() {
-        System.out.println("Rectangle is rotated");
+        System.out.println("Rectangle is rotated\n");
     }
 }

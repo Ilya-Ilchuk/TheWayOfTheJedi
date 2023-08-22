@@ -4,6 +4,15 @@ public abstract class Figure {
     protected float width = 2.0f;
     protected float height = 2.0f;
     protected byte[] coordinates = new byte[]{0, 0, 0};
+    public Animation animation = new Animation();
+
+     class Animation {
+        private int speed;
+        public void setSpeed(int _speed) {
+            speed = _speed;
+            System.out.println("Speed was set " + speed + "\n");
+        }
+    }
 
     // constructor
     public Figure() {
