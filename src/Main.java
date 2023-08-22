@@ -4,7 +4,11 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Dragon Ravi\n");
 
-        Cube cube = new Cube("pink",10,10, new byte[] {0,2,0});
+        Cube cube = new Cube("pink",10,10, new byte[] {0,2,0}, false);
+        cube.checkVisible();
+        cube.setVisible(true);
+        cube.checkVisible();
+
 
         Rectangle rectangle = new Rectangle("red",11,10, new byte[] {1,2,0});
     }
