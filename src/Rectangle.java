@@ -3,4 +3,9 @@ public class Rectangle extends Figure{
         setValues(_color, _width, _height, _coordinates);
         System.out.println(getValues());
     }
+
+    @Override
+    public void rotate() {
+        System.out.println("Rectangle is rotated");
+    }
 }

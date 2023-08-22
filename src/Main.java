@@ -5,11 +5,9 @@ public class Main {
         System.out.println("Dragon Ravi\n");
 
         Cube cube = new Cube("pink",10,10, new byte[] {0,2,0}, false);
-        cube.checkVisible();
-        cube.setVisible(true);
-        cube.checkVisible();
-
+        System.out.println(cube.getValues());
 
         Rectangle rectangle = new Rectangle("red",11,10, new byte[] {1,2,0});
+        rectangle.rotate();
     }
 }

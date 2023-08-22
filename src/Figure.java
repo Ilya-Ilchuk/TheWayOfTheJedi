@@ -1,9 +1,9 @@
-public class Figure {
+public abstract class Figure {
     // fields
-    private String color = "black";
-    private float width = 2.0f;
-    private float height = 2.0f;
-    private byte[] coordinates = new byte[]{0, 0, 0};
+    protected String color = "black";
+    protected float width = 2.0f;
+    protected float height = 2.0f;
+    protected byte[] coordinates = new byte[]{0, 0, 0};
 
     // constructor
     public Figure() {
@@ -39,4 +39,6 @@ public class Figure {
         }
         return info;
     }
+
+    public abstract void rotate();
 }
