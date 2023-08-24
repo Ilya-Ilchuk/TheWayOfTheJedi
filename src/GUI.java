@@ -1,26 +1,21 @@
 import javax.swing.*;
+import java.awt.*;
 
-public class GUI {
+public class GUI extends JFrame {
     public GUI() {
         JFrame frame = new JFrame("Win");
-        frame.setBounds(200,200, 400,400);
+        frame.setBounds(400,200, 400,400);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
-        try {
-            ImageIcon imageIcon = new ImageIcon("dragon.png");
-            frame.setIconImage(imageIcon.getImage());
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-
+        frame.getContentPane().setBackground(Color.GRAY);
+        Container container = super.getContentPane();
+        container.setLayout(new GridLayout(5, 2, 2, 3));
         frame.setVisible(true);
+        JLabel label = new JLabel("Hello, Swing!");
+        label.setFont(new Font("Arial", Font.PLAIN, 24));
+        JButton button = new JButton("Click Me!");
+        frame.setLayout(new FlowLayout());
+        frame.add(label);
+        frame.add(button);
 
-
-
-
-//        super.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-//        Container container = super.getContentPane();
-//        container.setLayout(new GridLayout(5, 2, 2, 3));
     }
 }
