@@ -17,9 +17,6 @@ public class GUI extends JFrame {
         frame.add(label);
         frame.add(button);
         System.out.println(frame.getX());
-        button.setBackground(Color.RED);
-        while (true) {
-            button.getActionListeners();
-        }
+        button.setBackground(Color.RED); // new
     }
 }
