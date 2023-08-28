@@ -4,7 +4,7 @@ import java.awt.*;
 public class GUI extends JFrame {
     public GUI() {
         JFrame frame = new JFrame("Win");
-        frame.setBounds(400,200, 400,400);
+        frame.setBounds(400,0, 800,600);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.getContentPane().setBackground(Color.GRAY);
         Container container = super.getContentPane();
